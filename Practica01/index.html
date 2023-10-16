@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica1</title>
     <style>
         h1{
             color: blue;
-        }
-        ol{
-            list-style-type: none;
-            margin-left: 40%;
-            text-align: justify;
-            font-size: 30px;
         }
         a:link {
             text-decoration: none;
@@ -36,17 +30,25 @@
         i{
             color: greenyellow;
         }
+        .cita {
+            background-color: yellow;
+            padding: 10px;
+            position: relative;
+            width: 20%;
+            margin: 20px auto; 
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
     <h1 style="text-align: center;">Indice</h1>
-        <ol>
-            <a href="#a"><li>Formato de texto</li></a>
-            <a href="#b"><li>Caracteres especiales</li></a>
-            <a href="#c"><li>&nbs p ; Espacios en blanco</li></a>
-            <a href="#d"><li>Listas</li></a>
-            <a href="#e"><li>Imagen centrada</li></a>
-            <a href="#f"><li>Cita celebre</li></a>
+        <ol style="list-style-type: none; margin-left: 40%; text-align: justify; font-size: 30px;">
+            <li><a href="#a">Formato de texto</a></li>
+            <li><a href="#b">Caracteres especiales</a></li>
+            <li><a href="#c">&amp;nbsp; Espacios en blanco</a></li>
+            <li><a href="#d">Listas</a></li>
+            <li><a href="#e">Imagen centrada</a></li>
+            <li><a href="#f">Cita celebre</a></li>
         </ol>
     <div>   
         <h1 id="a"> <span class="material-symbols-outlined">
@@ -58,11 +60,134 @@
         <p>Las tendencias más <i>cool</i> del verano.</p>
         <p>Parafraseando a Einstein <i>Dios no juega a los dados</i></p>
         <p>Benito le dijo a Manuel que <i>era un campeón</i></p>
+        <h2><strong>Subrayado y tachado</strong></h2>
+        <p><u>Esto es un <strong>texto</strong> subrayado</u></p>
+        <p>El hombre llegó a la luna en <del>1970</del><u>1969</u></p>
     </div>    
-    <h1 id="b">Caracteres especiales</h1>
-    <h1 id="c">&nbs p ; Espacios en blanco</h1>
-    <h1 id="d">Listas</h1>
-    <h1 id="e">Imagen centrada</h1>
-    <h1 id="f">Cita celebre</h1>
+    <div>
+        <h1 id="b"><span class="material-symbols-outlined">
+            special_character
+            </span> Caracteres especiales</h1>
+        <ul>
+            <li>&semi;</li>
+            <li>&lt;</li>
+            <li>&gt;</li>
+            <li>&amp;</li>
+            <li>&apos;</li>
+            <li>&quot;</li>
+            <li>\</li>
+            <li>/</li>
+            <li>ⓒ</li>
+            <li>&nbsp;</li>
+            <li>€</li>
+        </ul>
+    </div>
+    <div>    
+        <h1 id="c">&amp;nbsp; Espacios en blanco</h1>
+        <p>El espacio en blanco se codifica como &amp;nbsp;(<b>N</b>o<b>B</b>reak<b>SP</b>ace)</p>
+        <p>Hola que tal</p>
+        <p>Hola &nbsp; que tal</p>
+        <p>Hola &nbsp; &nbsp; que tal</p>
+        <p>Hola &nbsp; &nbsp; &nbsp; que tal</p>
+        <p>Hola &nbsp; &nbsp; &nbsp; &nbsp; que tal</p>
+    </div>
+    <div>  
+        <h1 id="d"><span class="material-symbols-outlined">
+        list
+        </span> Listas</h1>
+        <h2><strong>Lista numerada</strong></h2>   
+        <ol>
+            <li>Culpa irure laborum dolore ex dolore non incididunt ea ullamco consectetur enim dolor.</li>
+            <li>Tempor quis ullamco occaecat exercitation ex.</li>
+            <li>Exercitation deserunt id exercitation laborum aliqua elit do cupidatat velit eiusmod.</li>
+            <li>....</li>
+        </ol>
+        <h2><strong>Lista no numerada</strong></h2>
+        <ul>
+            <li>Sint cupidatat dolor do exercitation laboris cupidatat et consectetur nostrud exercitation aliqua officia ullamco.</li>
+            <li>Id nulla enim occaecat proident.</li>
+            <li>Minim eu non sit esse velit.</li>
+        </ul>
+        <h2><strong>Lista anidada</strong></h2>
+        <h3><strong>Ejemplo 1 - Protocolos de la capa de aplicación</strong></h3>
+        <ul>
+            <li>Transimisión de ficheros
+            <ul style="list-style-type: circle;">
+                <li>FTP</li>
+            </ul>
+            </li>
+            <li>Correo electrónico
+            <ul style="list-style-type: circle;">
+                <li>IMAP</li>
+                <li>POP</li>
+                <li>SMTP</li>
+            </ul>
+            </li>
+        </ul>
+        <h3><strong>Ejemplo 2 - Índice</strong></h3>
+        <ol>
+            <li>La comunicación
+            <ol>
+                <li>Conceptos</li>
+                <li>Elementos de un sistema de comunicación</li>
+                <li>Modos de transimisión</li>
+            </ol>
+            </li>
+            <li>Concepto de red. Ventajas
+            <ol>
+                <li>Conceptos de red</li>
+                <li>Ventajas de las redes</li>
+            </ol>
+            </li>
+            <li>Topologías de red
+            <ol>
+                <li>Topología en estrella</li>
+                <li>Topología en bus</li>
+                <li>Topología en anillo</li>
+                <li>Topología en árbol(estrella jerárquica)</li>
+                <li>Topología en malla</li>
+            </ol>
+            </li>
+        </ol>
+        <h3><strong>Ejemplo 3 - Mixto</strong></h3>
+        <ol>
+            <li>Mamíferos
+            <ul style="list-style-type: circle;">
+                <li>Gato</li>
+                <li>Perro</li>
+            </ul>
+            </li>
+            <li>Pájaros
+            <ul style="list-style-type: circle;">
+                <li>Paloma</li>
+                <li>Gorrión</li>
+            </ul>
+            </li>
+            <li>Peces
+            <ul style="list-style-type: circle;">
+                <li>Tiburón</li>
+                <li>Sardina</li>
+                <li>Atún</li>
+            </ul>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <h1 id="e"><span class="material-symbols-outlined">
+        image
+        </span> Imagen centrada</h1>
+        <div style="text-align: center;">
+            <img src="/Practica01/img/capturaImagen.JPG" alt="Foto">
+        </div>
+    </div>
+    <div>
+        <h1 id="f"><span class="material-symbols-outlined">
+        format_quote
+        </span> Cita celebre</h1>
+        <blockquote class="cita">
+            Todas las piezas deben unirse sin ser forzadas. Debe recordad que los componentes que está reensamblando fueros desmontados por usted, por lo que si no puede unirlos debe existir una razón. Pero sobre todo, no use un martillo
+        </blockquote>
+        <p  style="text-align: right; margin-right: 30%;"><cite>Manual de mantenimiento de IBM, año 1925</cite></p>
+    </div>
 </body>
 </html>
