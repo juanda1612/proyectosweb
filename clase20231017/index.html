@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        /* queremos que todas las tablas ocupen el 50% del body y que tengan el borde externo negro*/
+        table{
+            width: 50%;border: 1px solid black;
+        }
+        th{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        tr{
+            height: 20px;
+        }
+    </style>
+
+</head>
+<body>
+   <table style="background-color: khaki;"><!--Aqui empieza la tabla-->
+        <!--Las tablas se crean, primero, en filas: tr (table row)-->
+        <!--Dentro de CADA FILA añadimos taantas etiquetas td (table data) como columnas necesitemos -->
+        <!--Si quiero encabezados , utilizo la etiqueta th (table header) en vez td-->
+        <tr>
+            <th>Encabezado1</th>
+            <th>Encabezado2</th>
+            <th>Encabezado3</th>
+        </tr>
+        <tr>
+            <td>fila 1, Columna 1</td>
+            <td>fila 1, Columna 2</td>
+            <td>fila 1, Columna 3</td>
+        </tr>
+        <tr>
+            <td>fila 2, Columna 1</td>
+            <td>fila 2, Columna 2</td>
+            <td>fila 2, Columna 3</td>
+        </tr>
+   </table><!--Aqui termina la tabla-->
+   <br><br><br>
+   <!--Podemos aprovechar la abreviatura de emmet para crear rapidamente tablas. Asi: table>tr*3>td*4-->
+   <table style="width: 75%; 
+                 border-collapse: collapse;
+                 background-color: aqua;">
+    <tr>
+        <td style="width: 50%;">la propiedad <strong>border-collapse: collapse</strong> deja los bordes unicos en un trazo </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+   </table>
+
+   <br><br><br>
+
+   <table style="border-color: white; border-collapse: collapse;
+   border: 2px; 
+   background-color: aqua">
+    <tr>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+    </tr>
+    <tr>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+    </tr>
+    <tr>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+    </tr>
+    <tr>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+        <td style="border-color: white;"></td>
+    </tr>
+   </table>
+
+   <br><br><br>
+
+   <table style="background-color: khaki;
+                 border: 4px;
+                 border-color: blue;
+                 border-style: dotted;
+                 border-radius: 20px;">
+    <tr>
+        <th style="padding: 20%;">Encabezado1</th>
+        <th>Encabezado2</th>
+        <th>Encabezado3</th>
+    </tr>
+    <tr>
+        <td>fila 1, Columna 1</td>
+        <td>fila 1, Columna 2</td>
+        <td>fila 1, Columna 3</td>
+    </tr>
+    <tr>
+        <td>fila 2, Columna 1</td>
+        <td>fila 2, Columna 2</td>
+        <td>fila 2, Columna 3</td>
+    </tr>
+</table>
+
+<br><br><br>
+<table style="border-spacing: 30px;">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<br><br><br>
+<h1>Colspan y rowspan</h1>
+<table>
+    <tr>
+        <td style="width: 20%;"></td>
+        <td style="width: 20%;"></td>
+        <td style="width: 20%;"></td>
+        <td style="width: 20%;"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="3">colspan="3"</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td rowspan="3"> rowspan="3"</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>    
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
