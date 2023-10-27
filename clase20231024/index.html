@@ -8,6 +8,12 @@
         div{
             padding: 10px;
         }
+        form{
+            width: 50%;
+        }
+        fieldset{
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -19,13 +25,13 @@
         id: es el identificador unico del elemento en que este-->
     <form action="index.html" method="get" id="mi-formulario">
         <!--Vamos a meter cada pareja label-input en un bloque div, para estructurar el formulario; div añade un salto de linea al cerrarse, igual que la etiqueta de parrafo (p)-->
-        <div>
+        <fieldset>
             <!--Atributos importantes: el valor del atributo for de label tiene que coincidir con el del id del input-->
             <h2>Cuadro de texto</h2>
             <label for="cuadro-de-texto">Nombre</label>
             <input type="text" name="nombre" id="cuadro-de-texto" placeholder="Escribe tu nombre">
-        </div>
-        <div>
+        </fieldset>
+        <fieldset>
             <h2>Radio buttons: solo se puede seleccionar una de las opciones</h2>
             <!--A continuacion mostramos Los tres circulitos (o el numero que queramos): por cada circulito un input Todos ellos, si forman parte del mismo grupo, deben tener el mismo atributo name y diferentes id (para relacionarlos de foma unica con las etiquetas label)
             el atributo value es el valor que se enviara al servidos o pagina de destino-->
@@ -33,24 +39,38 @@
             <input type="radio" name="lenguaje" id="html" value="HTML"><label for="html" >HTML5</label>
             <input type="radio" name="lenguaje" id="css" value="CSS"><label for="css">CSS3</label>
             <input type="radio" name="lenguaje" id="js" value="JavaScript"><label for="js">JavaScript</label>
-        </div>
-        <div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2>Casillas de verificación: puede haber mas de una casilla seleccionada</h2>
+            <p>Cuales son tus aficiones?</p>
+            <input type="checkbox" name="fútbol" id="ft" value="Fútbol"><label for="ft">Fútbol</label>
+            <input type="checkbox" name="baile" id="bl" value="Baile"><label for="bl">Baile</label>
+            <input type="checkbox" name="leer" id="lr" value="Leer"><label for="lr">leer</label>
+            
+        </fieldset>
+        <fieldset>
             <!--El boton de enviar lo ponemos al final del todo-->
             <input type="submit" value="Enviar">
-        </div>
+        </fieldset>
     </form>
     <div id="resultado">
         <p id="nombre-valor"></p>
         <p id="lenguaje-valor"></p>
+        <p id="checkbox-valor"></p>
     </div>
     <script> document.getElementById("mi-formulario").addEventListener("submit", function (event) { 
         event.preventDefault(); 
         const formulario = event.target; 
         const nombre = formulario.elements["nombre"].value; 
         const lenguaje = formulario.elements["lenguaje"].value;
+        const fútbol = formulario.elements["fútbol"].value
+        const bailar = formulario.elements["baile"].value
+        const lectura = formulario.elements["leer"].value
         /*A continuacion "rellenamos" los parrafos correspondientes con el texto siguiente: */
         document.getElementById("nombre-valor").textContent = "Nombre: " + nombre; 
         document.getElementById("lenguaje-valor").textContent = "Lenguaje seleccionado: " + lenguaje;
+        document.getElementById("checkbox-valor").textContent = "aficiones: " + fútbol + " " + bailar + " " + lectura;
         }); 
         </script>
 </body>

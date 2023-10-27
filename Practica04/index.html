@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica04</title>
+    <style>
+        body{
+            background-color: rgb(172, 222, 255);
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: blue;
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+        div{
+            text-align: center;
+        }
+        fieldset{
+            text-align: justify;
+            border: none;
+        }
+        label{
+            padding: 5px;
+        }
+        form{
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Registro de DEVs</h1>
+    <p>Completa los siguientes campos</p>
+    </div>
+    <form action="destino.html" method="get" id="mi_formulario">
+        <fieldset>
+            <label for="name">Nombre(obligatorio)</label>
+            <label for="last_name">Apellidos(obligatorio)</label><br>
+            <input type="text" name="nombre" id="name" placeholder="Introduce tu nombre" required>
+        
+            <input type="text" name="apellido" id="last_name" placeholder="Introduce tus apellidos" required><br>
+        
+            <label for="email">Email(obligatorio)</label><br>
+            <input type="text" name="apellido" id="email" placeholder="Introduce tus apellidos" required>
+        </fieldset>
+    <div>
+        <p>Indica en qué lado de la aplicacion desarrollas</p>
+            <fieldset>
+                <input type="radio" name="front-end" id="fe" value="Front-end">
+                <label for="fe">Front-end</label><br>
+
+                <input type="radio" name="back-end" id="be" value="Back-end">
+                <label for="be">Back-end</label><br>
+
+                <input type="radio" name="full stack" id="fs" value="Full Stack">
+                <label for="fs">Full Stack</label>
+            </fieldset>
+    </div> 
+    <div>
+        <p>Nivel de experiencia</p>
+        <input type="search" name="" id="" placeholder="Selecciona una de las opciones">
+    </div>          
+    </form>  
+</body>
+</html>
