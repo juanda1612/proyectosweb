@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function muestra(color){
+            document.getElementById("miDiv").innerHTML +="";
+           for (var i = 1; i<= 6; i++){
+               document.getElementById("miDiv").innerHTML += "<[]" + i + "style= 'color:"+color+"' >cabecera de nivel " + i + "</H" + i + ">"; 
+           }
+        }
+    </script>
+    <script>
+        function muestra2(){
+            document.getElementById("miDiv2").innerHTML +="";
+            var a = 1;
+            while(a <= 6){
+                document.getElementById("miDiv2").innerHTML += "<H" + a + ">cabecera de nivel " + a + "</H" + a + ">";
+                a++;
+            } 
+        }
+    </script>   
+</head>
+<body>
+    <form>
+    <input type="button" value="Mostrar" onclick="muestra('red');">
+    <input type="button" value="Mostrar con While" onclick="muestra2('blue');">
+    </form>
+    <div id="miDiv"></div>
+    <div id="miDiv2"></div>
+    
+</body>
+</html>

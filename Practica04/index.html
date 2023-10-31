@@ -43,7 +43,7 @@
             <input type="text" name="apellido" id="last_name" placeholder="Introduce tus apellidos" required><br>
         
             <label for="email">Email(obligatorio)</label><br>
-            <input type="text" name="apellido" id="email" placeholder="Introduce tus apellidos" required>
+            <input type="email" name="email" id="email" placeholder="Introduce tu correo" required>
         </fieldset>
     <div>
         <p>Indica en qué lado de la aplicacion desarrollas</p>
@@ -59,8 +59,49 @@
             </fieldset>
     </div> 
     <div>
-        <p>Nivel de experiencia</p>
-        <input type="search" name="" id="" placeholder="Selecciona una de las opciones">
+        <fieldset>
+            <p>Nivel de experiencia</p>
+            <select id="opciones" name="Opciones">
+                <option value="" disabled selected>Selecciona una de las opciones</option>
+                <option value="opcion1">Junior</option>
+                <option value="opcion2">Senior</option>
+                <option value="opcion3">Experto</option>
+            </select>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <p>Seleciona las tecnologías que utilizas:</p>
+            <input type="checkbox" name="Html" id="html" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" name="Css" id="css" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" name="JavaScript" id="javascript" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <input type="checkbox" name="Php" id="php" value="PHP">
+            <label for="php">PHP</label>
+
+            <input type="checkbox" name="C#" id="c" value="C#">
+            <label for="c">C#</label>
+
+            <input type="checkbox" name="Python" id="python" value="Python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" name="Java" id="java" value="Java">
+            <label for="java">Java</label>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <label for="experiencia">Cuenta algo más acerca de tu experiencia</label><br>
+            <input type="text" name="Experiencia" id="experiencia">
+        </fieldset>
+    </div>
+    <div>
+        <input type="submit" value="Enviar">
     </div>          
     </form>  
 </body>
