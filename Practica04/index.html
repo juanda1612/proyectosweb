@@ -7,25 +7,21 @@
     <style>
         body{
             background-color: rgb(172, 222, 255);
+            height: 100%;
+            width: 100%;
         }
         h1{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: blue;
         }
         p{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-align: justify;
         }
         div{
-            text-align: center;
+            text-align: justify;
         }
         fieldset{
             text-align: justify;
             border: none;
-        }
-        label{
-            padding: 5px;
-        }
-        form{
         }
     </style>
 </head>
@@ -37,24 +33,24 @@
     <form action="destino.html" method="get" id="mi_formulario">
         <fieldset>
             <label for="name">Nombre(obligatorio)</label>
-            <label for="last_name">Apellidos(obligatorio)</label><br>
-            <input type="text" name="nombre" id="name" placeholder="Introduce tu nombre" required>
+            <label for="last_name" style="margin-left: 53px;">Apellidos(obligatorio)</label><br>
+            <input type="text" name="Nombre" id="name" placeholder="Introduce tu nombre" required>
         
-            <input type="text" name="apellido" id="last_name" placeholder="Introduce tus apellidos" required><br>
+            <input type="text" name="Apellido" id="last_name" placeholder="Introduce tus apellidos" required><br>
         
             <label for="email">Email(obligatorio)</label><br>
-            <input type="email" name="email" id="email" placeholder="Introduce tu correo" required>
+            <input type="email" name="Email" id="email" placeholder="Introduce tu correo" required>
         </fieldset>
     <div>
         <p>Indica en qué lado de la aplicacion desarrollas</p>
             <fieldset>
-                <input type="radio" name="front-end" id="fe" value="Front-end">
+                <input type="radio" name="Desarrollo" id="fe" value="Front-end">
                 <label for="fe">Front-end</label><br>
 
-                <input type="radio" name="back-end" id="be" value="Back-end">
+                <input type="radio" name="Desarrollo" id="be" value="Back-end">
                 <label for="be">Back-end</label><br>
 
-                <input type="radio" name="full stack" id="fs" value="Full Stack">
+                <input type="radio" name="Desarrollo" id="fs" value="Full Stack">
                 <label for="fs">Full Stack</label>
             </fieldset>
     </div> 
@@ -63,9 +59,9 @@
             <p>Nivel de experiencia</p>
             <select id="opciones" name="Opciones">
                 <option value="" disabled selected>Selecciona una de las opciones</option>
-                <option value="opcion1">Junior</option>
-                <option value="opcion2">Senior</option>
-                <option value="opcion3">Experto</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+                <option value="Experto">Experto</option>
             </select>
         </fieldset>
     </div>
@@ -97,7 +93,7 @@
     <div>
         <fieldset>
             <label for="experiencia">Cuenta algo más acerca de tu experiencia</label><br>
-            <input type="text" name="Experiencia" id="experiencia">
+            <textarea name="Experiencia" id="experiencia" cols="60" rows="10"></textarea>
         </fieldset>
     </div>
     <div>
