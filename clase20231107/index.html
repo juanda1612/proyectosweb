@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div-id-class</title>
+    <style>
+        body{
+            background-color: #f2ffe9;
+        }
+        div{
+            background-color:#a6cf98;
+            width: 50%; /*recuerda: es el 50% respecto a su contenedor, que en este caso es el body*/
+            /* con margin: auto centramos el elemento respecto a derecha e izquierda*/
+            margin: auto;
+            padding: 10px;
+            /* queremos que el texto que tengamos dentro de los div se justifiquen a los lados*/
+            text-align: justify;
+        }
+        /*ahora quiero que cada div tenga la letra de un color diferente; para eso tengo que individualizalos, y eso lo hago con id*/
+        #bloque1{
+            font-size: large;
+            color: #557c55;
+        }
+        #bloque2{
+            font-style: italic;
+            color: #FA7070;
+        }
+        #bloque3{
+            font-weight: bold;
+            color: #f2ffe9;
+        }
+        /*el problema que tiene id es que no puede haber dos iguales, y a veces quiero dar el mismo estilo diferenciado a un conjunto de elementos
+        entonces utilizo class, que si puede repetirse en diferentes elementos*/
+        .clase1{
+            background-color: #557c55;
+            color: #aef597;
+        }
+    </style>
+</head>
+<body>
+    <!--Este es el primer bloque-->
+    <!--Para diferenciar un bloque de otro, identificarlo de forma unica, le asignamos un id; no puede haber dos elemtos con igual id-->
+    <div id="bloque1">
+        Enim commodo elit sunt eiusmod minim ad fugiat amet. Nulla nisi excepteur pariatur aute sint mollit ipsum. Commodo voluptate deserunt quis adipisicing aute labore labore. Laboris proident culpa elit et anim cupidatat. Ipsum sit incididunt reprehenderit ea reprehenderit esse cillum aliquip eiusmod.
+    </div>
+    <!--Este es el segundo bloque-->
+    <div id="bloque2">
+        Anim veniam nostrud reprehenderit cillum. Elit aliqua sint incididunt amet pariatur quis tempor cillum veniam id laborum qui est nisi. Minim eu commodo ex ea in. Nulla est consectetur eiusmod ex cillum ipsum excepteur nulla Lorem proident aliquip id sint. Nisi nisi occaecat voluptate cillum anim exercitation mollit.
+    </div>
+    <!--Este es el tercer bloque-->
+    <div id="bloque3">
+        Enim enim pariatur excepteur tempor est. Commodo deserunt aliquip nostrud labore pariatur ea id commodo consectetur ipsum duis. Officia sunt labore qui eiusmod id consequat sint culpa.
+    </div>
+    <!--En estos siguientes div lo que quiero es aplicar el mismo estilo conjuntamente a kis 3, pero diferente de los anteriores div-->
+     <!--Este es el cuarto bloque-->
+     <div class="clase1">
+        Enim enim pariatur excepteur tempor est. Commodo deserunt aliquip nostrud labore pariatur ea id commodo consectetur ipsum duis. Officia sunt labore qui eiusmod id consequat sint culpa.
+    </div>
+      <!--Este es el quinto bloque-->
+    <div class="clase1">
+        Enim enim pariatur excepteur tempor est. Commodo deserunt aliquip nostrud labore pariatur ea id commodo consectetur ipsum duis. Officia sunt labore qui eiusmod id consequat sint culpa.
+    </div>
+      <!--Este es el sexto bloque-->
+    <div class="clase1">
+        Enim enim pariatur excepteur tempor est. Commodo deserunt aliquip nostrud labore pariatur ea id commodo consectetur ipsum duis. Officia sunt labore qui eiusmod id consequat sint culpa.
+    </div>
+</body>
+</html>
