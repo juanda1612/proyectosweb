@@ -1,0 +1,95 @@
+div{
+    border: 2px solid black;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#titulo{
+    float: right;
+    
+}
+a{
+    padding: 10%;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+iframe{
+    width: 40%;
+    height: 80%;
+}
+#video1{
+    float: left;
+}
+#video2{
+    float: right;
+}
+#header{
+    background-color: rgb(255, 117, 117);
+    width: 80%;
+}
+#nav{
+    background-color: rgb(128, 238, 229);
+   margin-top: 25px;
+    text-align: center;
+    width: 90%;
+}
+#main{
+    background-color: rgb(255, 117, 117);
+}
+#section1{
+    background-color: rgb(128, 238, 229);
+    height: 250px;
+}
+#section2{
+    background-color: rgb(128, 238, 229);
+    height: 200px;
+}
+#article1{
+    background-color:rgb(255, 117, 117);
+    float: right;
+    width: 40%;
+    height: 80%;
+}
+#section3{
+    background-color: rgb(128, 238, 229);
+    height: 200px;
+}
+#article2{
+    background-color: rgb(255, 117, 117);
+    float: left;
+    width: 40%;
+    height: 80%;
+}
+#footer{
+    background-color: rgb(255, 117, 117);
+    display: flex;
+    height: 250px;
+}
+#section4{
+    background-color: rgb(128, 238, 229);
+    float: left;
+    height: 80%;
+    width: 20%;
+}
+#section5{
+    background-color: rgb(128, 238, 229);
+    height: 80%;
+    width: 20%;
+}
+#section6{
+    background-color: rgb(128, 238, 229);
+    height: 80%;
+    float: right;
+    width: 20%;
+}
+.material-symbols-outlined{
+    font-size: 50px;
+}
+#menu{
+    font-size: 30px;
+}
