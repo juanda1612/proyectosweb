@@ -1,0 +1,59 @@
+body{
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 80%;
+    width: 80%;
+}
+header{
+    text-align: center;
+    margin-bottom: 10px;
+    flex-flow: row wrap;
+}
+nav{
+    border: 2px solid black;
+    height: 50px;
+    flex: 100%;
+    display: flex;
+}
+a{
+    margin: auto;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: aqua;
+}
+h2{
+    margin: auto;
+    color: black;
+}
+main{
+    border: 2px solid black;
+    height: 100%;
+    flex: 100%;
+    display: flex;
+    margin: 10px;
+}
+footer, section{
+    padding: 5px;
+    border: 2px solid black;
+    height: 25%;
+    flex: 100%;
+    display: flex;
+    margin: 10px;
+}
+table{
+    margin: auto;
+    border: 1px solid black;border-collapse: collapse;
+}
+td, th{
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    height: 100px;
+}
+th{
+    font-size: 20px;
+}

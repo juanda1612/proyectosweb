@@ -5,6 +5,8 @@ div{
     margin: auto;
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    
 }
 #titulo{
     float: right;
@@ -29,8 +31,9 @@ iframe{
     float: right;
 }
 #header{
-    background-color: rgb(255, 117, 117);
+    background-color: rgb(60, 216, 255);
     width: 80%;
+    
 }
 #nav{
     background-color: rgb(128, 238, 229);
@@ -39,7 +42,7 @@ iframe{
     width: 90%;
 }
 #main{
-    background-color: rgb(255, 117, 117);
+    background-color: rgb(60, 216, 255);
 }
 #section1{
     background-color: rgb(128, 238, 229);
@@ -50,7 +53,7 @@ iframe{
     height: 200px;
 }
 #article1{
-    background-color:rgb(255, 117, 117);
+    background-color:rgb(60, 216, 255);
     float: right;
     width: 40%;
     height: 80%;
@@ -60,13 +63,13 @@ iframe{
     height: 200px;
 }
 #article2{
-    background-color: rgb(255, 117, 117);
+    background-color: rgb(60, 216, 255);
     float: left;
     width: 40%;
     height: 80%;
 }
 #footer{
-    background-color: rgb(255, 117, 117);
+    background-color: rgb(60, 216, 255);
     display: flex;
     height: 250px;
 }
