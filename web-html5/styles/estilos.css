@@ -3,14 +3,20 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 80%;
     width: 80%;
+    background-color: #F2F2F2;
 }
 header{
+    border: 2px solid #400101;
+    background-color: #BF7C41;
     text-align: center;
-    margin-bottom: 10px;
+    
     flex-flow: row wrap;
 }
 nav{
-    border: 2px solid black;
+    margin: 2px;
+    border-radius: 8px;
+    background-color: #F2D6BD;
+    border: 2px solid #400101;
     height: 50px;
     flex: 100%;
     display: flex;
@@ -21,39 +27,58 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: aqua;
+    color: #BF7C41;
+    
 }
 h2{
     margin: auto;
     color: black;
 }
 main{
-    border: 2px solid black;
+    background-color: #BF7F5A;
+    border: 2px solid #400101;
     height: 100%;
     flex: 100%;
     display: flex;
-    margin: 10px;
 }
 footer, section{
     padding: 5px;
-    border: 2px solid black;
+    border: 2px solid #400101;
     height: 25%;
     flex: 100%;
     display: flex;
+}
+section{
     margin: 10px;
+    background-color: #400101;
+}
+footer{
+    padding: 10px;
+    background-color: #F2D6BD;
 }
 table{
     margin: auto;
-    border: 1px solid black;border-collapse: collapse;
+    border: 1px solid #400101;border-collapse: collapse;
 }
 td, th{
     padding: 5px;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #400101;
     border-collapse: collapse;
     width: 50%;
     height: 100px;
 }
 th{
+    background-color: #BF7C41;
     font-size: 20px;
+}
+td{
+    background-color: #F2D6BD;
+}
+div{
+    background-color: #BF7F5A;
+    border: 2px solid #400101;
+    height: 100%;
+    flex: 100%;
+    text-align: center;
 }
