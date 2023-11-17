@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Formulario</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(172, 222, 255);
+            
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        table, th, td {
+            
+            border: 2px solid black;
+        }
+
+        th, td {
+
+            padding: 8px;
+            text-align: center;
+        }
+        th{ 
+            
+            font-size: 20px;
+            background-color: rgb(154, 195, 241);
+        }
+        td{
+            background-color: aliceblue;
+        }
+        h1{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+        <h1>Información del Formulario</h1>
+        <div id="resultados">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td id="nombre"></td>
+                    <td id="apellido"></td>
+                    <td id="email"></td>
+                </tr>
+                <tr>
+                    <th>Desarrollo</th>
+                    <th>Nivel de experiencia</th>
+                    <th>Tecnologías</th>
+                </tr>
+                <tr>
+                    <td id="desarrollo"></td>
+                    <td id="opcion"></td>
+                    <td id="tecnologias"></td>
+                </tr>
+                <tr>
+                    <th>Experiencia</th>
+                    <td colspan="2" id="experiencia"></td>
+                </tr>
+            </table>
+        </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const parametros = new URLSearchParams(location.search);
+            const nombre = parametros.get("Nombre");
+            const apellido = parametros.get("Apellido");
+            const email = parametros.get("Email");
+            const desarrollo = parametros.get("Desarrollo");
+            const opcion = parametros.get("Opciones");
+            const HTMl = parametros.getAll("Html");
+            const CSs = parametros.getAll("Css");
+            const JAVAScript = parametros.getAll("JavaScript");
+            const PHp = parametros.getAll("Php");
+            const C = parametros.getAll("C#");
+            const PYthon = parametros.getAll("Python");
+            const JAva = parametros.getAll("Java");
+            const experiencia = parametros.get("Experiencia");
+
+            document.getElementById("nombre").textContent = nombre;
+            document.getElementById("apellido").textContent = apellido;
+            document.getElementById("email").textContent = email;
+            document.getElementById("desarrollo").textContent = desarrollo;
+            document.getElementById("opcion").textContent = opcion;
+            document.getElementById("tecnologias").textContent = HTMl + " " + CSs + " " + JAVAScript + " " + C + " " + PHp + " " + PYthon + " " + JAva  ;
+            document.getElementById("experiencia").textContent = experiencia;
+        });
+    </script>
+</body>
+</html>

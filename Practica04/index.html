@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica04</title>
+    <style>
+        body{
+            background-color: rgb(172, 222, 255);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            margin: 0;
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: blue;
+            text-align: justify;
+        }
+        p, label, input, select, textarea, legend, option{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+        p{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        div{
+            text-align: center;
+        }
+        fieldset{
+            text-align: justify;
+            border: none;
+        }
+        #mi_formulario {
+            width: 100%;
+            max-width: 500px; 
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .grupo label{
+            text-decoration: underline;
+            font-weight: bold;
+            margin: 5px;
+        }
+        .grupo input{
+            margin: 5px;
+        }
+        #opciones:hover{
+            background-color: rgb(172, 222, 255);
+        }
+        input[type="submit"] {
+        background-color: #007bff; 
+        color: #fff; 
+        border: none; 
+        border-radius: 4px; 
+        padding: 10px 20px; 
+        cursor: pointer; 
+        font-size: 16px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        input[type="submit"]:hover {
+        background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Registro de DEVs</h1>
+    <p style="text-decoration: none;">COMPLETA LOS SIGUIENTES CAMPOS</p>
+    </div>
+    <form action="destino.html" method="get" id="mi_formulario">
+    <div>   
+        <fieldset class="grupo">
+            <label for="name">Nombre(obligatorio)</label>
+            <label for="last_name" style="margin-left: 22px;" >Apellidos(obligatorio)</label><br>
+            <input type="text" name="Nombre" id="name" placeholder="Introduce tu nombre" required>
+        
+            <input style="margin-left: 20px;"  type="text" name="Apellido" id="last_name" placeholder="Introduce tus apellidos" required ><br>
+        
+            <label for="email">Email(obligatorio)</label><br>
+            <input type="email" name="Email" id="email" placeholder="Introduce tu correo" required>
+        </fieldset>
+    </div>     
+    <div>
+        <p>Indica en qué lado de la aplicacion desarrollas</p>
+            <fieldset>
+                <input type="radio" name="Desarrollo" id="fe" value="Front-end">
+                <label for="fe">Front-end</label><br>
+
+                <input type="radio" name="Desarrollo" id="be" value="Back-end">
+                <label for="be">Back-end</label><br>
+
+                <input type="radio" name="Desarrollo" id="fs" value="Full Stack">
+                <label for="fs">Full Stack</label>
+            </fieldset>
+    </div> 
+    <div>
+        <p>Nivel de experiencia</p>
+        <fieldset>
+            <select id="opciones" name="Opciones">
+                <option value="" disabled selected>Selecciona una de las opciones</option>
+                <option value="Junior">Junior</option>
+                <option value="Senior">Senior</option>
+                <option value="Experto">Experto</option>
+            </select>
+        </fieldset>
+    </div>
+    <div>
+        <p>Seleciona las tecnologías que utilizas:</p>
+        <fieldset>
+            
+            <input type="checkbox" name="Html" id="html" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" name="Css" id="css" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" name="JavaScript" id="javascript" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <input type="checkbox" name="Php" id="php" value="PHP">
+            <label for="php">PHP</label>
+
+            <input type="checkbox" name="C#" id="c" value="C#">
+            <label for="c">C#</label>
+
+            <input type="checkbox" name="Python" id="python" value="Python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" name="Java" id="java" value="Java">
+            <label for="java">Java</label>
+        </fieldset>
+    </div>
+    <div>
+        <p>Cuenta algo más acerca de tu experiencia: </p>
+        <fieldset>
+            
+            <textarea name="Experiencia" id="experiencia" cols="73" rows="10"></textarea>
+        </fieldset>
+    </div>
+    <div>
+        <input type="submit" value="Enviar">
+    </div>          
+    </form>  
+</body>
+</html>
