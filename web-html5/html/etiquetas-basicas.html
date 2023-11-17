@@ -13,9 +13,90 @@
             <a href="/web-html5/index.html">Home</a>
         </nav>
     </header>
-    <main>
+    <div>
+        <h2 id="conceptosBasicos">Conceptos basicos de HTML</h2>
+    </div>
+    <main class="vertical">
         <section>
-            <h2 id="conceptosBasicos">Conceptos basicos de HTML</h2>
+            <p><strong> Entonces, ¿qué es HTML en realidad?</strong><br><br>
+                HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu contenido. HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del contenido para que se vean o comporten de una determinada manera. Las etiquetas de encierre pueden hacer de una palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar palabras a cursiva, agrandar o achicar la letra, etc.</p>
+        </section>
+        <section class="vertical">
+            <p>Si quieres especificar que se trata de un párrafo, podrías encerrar el texto con la etiqueta de párrafo (&ltp&gt):</p>   
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&ltp&gtMi gato es muy gruñon&lt/p&gt</td>
+                </tr>
+            </table> 
+        </section>
+        <section class="vertical">
+            <p><strong> Anatomía de un elemento HTML</strong></p>
+            <img src="/web-html5/images/grumpy-cat-small.png" alt="foto_etiqueta">
+            <p>Las partes principales del elemento son:</p>
+            <ol>
+                <li>
+                    <strong>La etiqueta de apertura:</strong> consiste en el nombre del elemento (en este caso, p), encerrado por <strong> paréntesis angulares </strong> (&lt &gt) de apertura y cierre. Establece dónde comienza o empieza a tener efecto el elemento —en este caso, dónde es el comienzo del párrafo—.
+                </li>
+                <li>
+                    <strong>La etiqueta de cierre:</strong> es igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento —en este caso dónde termina el párrafo—.
+                </li>
+                <li>
+                    <strong>El contenido:</strong> este es el contenido del elemento, que en este caso es sólo texto.
+                </li>
+                <li>
+                    <strong>El elemento:</strong> la etiqueta de apertura, más la etiqueta de cierre, más el contenido equivale al elemento.
+                </li>
+            </ol><br>
+            <p>Los elementos pueden también tener atributos, que se ven así:</p>
+            <img src="/web-html5/images/grumpy-cat-attribute-small.png" alt="foto_atributo">
+            <p>Los atributos contienen información adicional acerca del elemento, la cual no quieres que aparezca en el contenido real del elemento.</p>
+            <p>Un atributo debe tener siempre:</p>
+            <ol>
+                <li>
+                    Un espacio entre este y el nombre del elemento (o del atributo previo, si el elemento ya posee uno o más atributos).
+                </li>
+                <li>
+                    El nombre del atributo, seguido por un signo de igual <b>(=)</b>.
+                </li>
+                <li>
+                    Comillas de apertura y de cierre, encerrando el valor del atributo.
+                </li>
+            </ol>
+        </section>
+        <section class="vertical">
+           <p><strong>Anidar elementos</strong></p>
+           <p>Puedes también colocar elementos dentro de otros elementos —esto se llama anidamiento—. Si, por ejemplo, quieres resaltar una palabra del texto (en el ejemplo la palabra «muy»), podemos encerrarla en un elemento &ltstrong&gt, que significa que dicha palabra se debe enfatizar:</p>
+           <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&ltp&gtMi gato es &ltstrong&gtmuy&lt/strong&gt gruñon&lt/p&gt</td>
+                </tr>
+            </table> 
+            <p>
+                Debes asegurarte que los elementos estén correctamente anidados: en el ejemplo de abajo, creaste la etiqueta de apertura del elemento &ltp&gt primero, luego la del elemento &ltstrong&gt, por lo tanto, debes cerrar esta etiqueta primero, y luego la de &ltp&gt. <b> Esto es incorrecto:</b>
+            </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&ltp&gtMi gato es &ltstrong&gtmuy gruñon&lt/p&gt&lt/strong&gt</td>
+                </tr>
+            </table> 
+        </section>
+        <section class="vertical">
+
+        </section>
+        <section class="vertical">
+
+        </section>
+        <section class="vertical">
+
         </section>
     </main>
 </body>

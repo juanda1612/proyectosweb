@@ -9,7 +9,6 @@ header{
     border: 2px solid #400101;
     background-color: #BF7C41;
     text-align: center;
-    
     flex-flow: row wrap;
 }
 nav{
@@ -20,7 +19,6 @@ nav{
     height: 50px;
     flex: 100%;
     display: flex;
-    overflow: hidden;
 }
 a{
     margin: auto;
@@ -44,6 +42,9 @@ main{
     flex: 100%;
     display: flex;
 }
+.vertical{
+    display: block;
+}
 footer, section{
     padding: 5px;
     border: 2px solid #400101;
@@ -65,11 +66,16 @@ footer{
     padding: 10px;
     background-color: #F2D6BD;
 }
+.tabla{
+    margin: auto;
+    width: 50%;
+}
 table{
     margin: auto;
     border: 1px solid #400101;
     border-collapse: collapse;
     width: 80%;
+    
 }
 td, th{
     padding: 5px;
@@ -86,13 +92,33 @@ th{
 td{
     background-color: #F2D6BD;
 }
+.header{
+    padding: 10px;
+    text-align: left;
+    height: 10%;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+.data{
+    text-align: left;
+    height: 50px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
 div{
+   
     background-color: #BF7F5A;
     border: 2px solid #400101;
     height: 100%;
     flex: 100%;
     text-align: center;
+    padding: 3px;
 }
-div:hover{
-    height: 110%;
+p, li{
+    text-align: justify;
+    padding: 2px;
+    color: #F2D6BD;
+}
+img{
+    height: 100px;
 }
