@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #BF7C41;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #F2D6BD;
+    border: 2px solid #400101;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+}
+
+.page {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: transform 0.3s, opacity 0.3s, transform-origin 0.3s;
+}
+
+.page.current {
+    opacity: 1;
+    transform: scale(1.2); /* Hace la página actual más grande */
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.arrow.right {
+    transform: rotateY(180deg);
+}
+
+.arrow:hover {
+    color: #BF7C41;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    background-color: #BF7F5A;
+    border: 2px solid #400101;
+}
+
+/* Estilos adicionales para la rotación de las páginas */
+.pages {
+    perspective: 1000px;
+}
+
+.page {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.page:not(.current) {
+    transform: rotateY(45deg);
+    pointer-events: none;
+    transform-origin: 100% 50%; /* Cambia el origen de la transformación para mantener el tamaño original */
+}
+
+.page.right:not(.current) {
+    transform: rotateY(-45deg);
+}

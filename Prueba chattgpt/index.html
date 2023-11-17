@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegación Rotativa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="arrow left" onclick="changePage(-1)">&#9664;</div>
+            <div class="pages">
+                <a href="#" class="page" data-page="1">Página 1</a>
+                <a href="#" class="page" data-page="2">Página 2</a>
+                <a href="#" class="page" data-page="3">Página 3</a>
+            </div>
+            <div class="arrow right" onclick="changePage(1)">&#9654;</div>
+        </nav>
+    </header>
+    <main>
+        <h1>Contenido de la Página</h1>
+    </main>
+</body>
+</html>
