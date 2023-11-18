@@ -32,8 +32,11 @@ a:hover{
 }
 
 h2{
+
+    padding: 5px;
     margin: auto;
     color: black;
+    font-size: 30px;
 }
 main{
     background-color: #BF7F5A;
@@ -71,6 +74,7 @@ footer{
     width: 50%;
 }
 table{
+    
     margin: auto;
     border: 1px solid #400101;
     border-collapse: collapse;
@@ -78,7 +82,6 @@ table{
     
 }
 td, th{
-    padding: 5px;
     text-align: center;
     border: 1px solid #400101;
     border-collapse: collapse;
@@ -114,11 +117,22 @@ div{
     text-align: center;
     padding: 3px;
 }
-p, li{
+p, li ,h3{
     text-align: justify;
     padding: 2px;
     color: #F2D6BD;
 }
 img{
+    
     height: 100px;
+}
+.imagenPeque{
+    width: 100%;
+    
+}
+small{
+    font-size: 12px;
+    background-color: #6e0b0b   ;
+    border-radius: 6px;
+    border: 2px solid #6e0b0b;
 }
