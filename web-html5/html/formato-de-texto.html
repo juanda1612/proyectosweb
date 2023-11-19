@@ -1,14 +1,254 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formato de texto</title>
-    <link rel="stylesheet" href="/web-html5/styles/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
 </head>
+
 <body>
-    <nav>
-        <a href="/web-html5/index.html">Home</a>
-    </nav>
+    <header>
+        <h1>Formato de texto</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+        </nav>
+    </header>
+    <main class="vertical">
+        <section class="vertical">
+            <div>
+                <h2 id="elementosTexto"> Elementos de formato de texto</h2>
+            </div>
+            <p>Los elementos de formato se diseñaron para mostrar tipos especiales de texto:</p>
+            <ul>
+                <li><mark>&lt;b&gt;</mark>- Texto en negrita</li>
+                <li><mark>&lt;strong&gt;</mark>- Texto importante</li>
+                <li><mark>&lt;i&gt;</mark>- Texto en cursiva</li>
+                <li><mark>&lt;em&gt;</mark>- Texto enfatizado</li>
+                <li><mark>&lt;mark&gt;</mark>- Texto marcado</li>
+                <li><mark>&lt;small&gt;</mark>- Texto más pequeño</li>
+                <li><mark>&lt;del&gt;</mark>- Texto eliminado</li>
+                <li><mark>&lt;ins&gt;</mark>- Texto insertado</li>
+                <li><mark>&lt;sub&gt;</mark>- Texto subíndic</li>
+                <li><mark>&lt;sup&gt;</mark>- Texto en superíndice</li>
+            </ul>
+
+            <h3>Elementos HTML &lt;b&gt; y &lt;strong&gt;</h3>
+            <p>El elemento HTML <mark>&lt;b&gt;</mark> define texto en negrita, sin importancia adicional.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;b&gt;Este texto está en negrita&lt;/b&gt;</td>
+                </tr>
+            </table>
+            <p>El elemento HTML <mark>&lt;strong&gt;</mark> define el texto con gran importancia. El contenido del
+                interior normalmente se muestra en negrita.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;strong&gt;Este texto es importante!&lt;/strong&gt;</td>
+                </tr>
+            </table>
+
+            <h3>Elementos HTML &lt;i&gt; y &lt;em&gt;</h3>
+            <p>El elemento HTML <mark>&lt;i&gt;</mark> define una parte del texto en una voz o estado de ánimo
+                alternativo. El contenido interior normalmente se muestra en cursiva.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;i&gt;Este texto esta en cursiva&lt;/i&gt;</td>
+                </tr>
+            </table>
+
+            <p>El elemento HTML <mark>&lt;em&gt;</mark> define el texto enfatizado. El contenido interior normalmente se
+                muestra en cursiva.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;em&gt;Este texto esta enfatizado&lt;/em&gt;</td>
+                </tr>
+            </table>
+
+            <h3>Elementos HTML &lt;small&gt;</h3>
+            <p>El elemento HTML <mark>&lt;small&gt;</mark> define texto más pequeño:</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;small&gt;Este es un texto más pequeño&lt;/small&gt;</td>
+                </tr>
+            </table>
+
+            <h3>Elementos HTML &lt;mark&gt;</h3>
+            <p>El elemento HTML <mark>&lt;mark&gt;</mark> define el texto que debe marcarse o resaltarse:</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;p&gt;No olvides comprar &lt;mark&gt; leche &lt;/mark&gt; hoy&lt;/p&gt;</td>
+                </tr>
+            </table>
+
+            <h3>Elementos HTML &lt;del&gt;</h3>
+            <p>El elemento HTML <mark>&lt;del&gt;</mark> define el texto que se ha eliminado de un documento.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;p&gt;Mi color favorito es &lt;del&gt;azul&lt;/del&gt; rojo&lt;/p&gt;</td>
+                </tr>
+            </table>
+
+            <h3>Elementos HTML &lt;ins&gt;</h3>
+            <p>El elemento HTML <mark>&lt;ins&gt;</mark> define un texto que se ha insertado en un documento. Los
+                navegadores normalmente subrayarán el texto insertado:</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;p&gt;Mi color favorito es &lt;del&gt;azul&lt;/del&gt;
+                        &lt;ins&gt;rojo&lt;/ins&gt; &lt;/p&gt;</td>
+                </tr>
+            </table>
+
+            <h3>Elementos HTML &lt;sub&gt;</h3>
+            <p>El elemento HTML <mark>&lt;sub&gt;</mark> define el texto del subíndice. El texto con subíndice se puede
+                utilizar para fórmulas químicas, como H<sub>2</sub>O:</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;p&gt;este es un texto &lt;sub&gt;subscrito&lt;/sub&gt; &lt;/p&gt;</td>
+                </tr>
+            </table>
+
+            <h3>Elementos HTML &lt;sup&gt;</h3>
+            <p>El elemento HTML <mark>&lt;sup&gt;</mark> define texto en superíndice. Se puede utilizar texto en
+                superíndice para notas a pie de página, como WWW <sup>[1]</sup> :</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;p&gt;Este es texto en &lt;sup&gt;superíndice&lt;/sup&gt;&lt;/p&gt;</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="vertical">
+            <div>
+                <h2 id="elementosCitas">Elementos de citas HTML</h2>
+            </div>
+            <p>En este apartado veremos los elementos &lt;blockquote&gt;, &lt;q&gt;, &lt;abbr&gt;, &lt;abbr&gt;, &lt;cite&gt;y &lt;bdo&gt;</p>
+
+            <h3>HTML &lt;blockquote&gt; para citas</h3>
+            <p>El elemento HTML <mark>&lt;blockquote&gt;</mark> define una sección que se cita de otra fuente. Los
+                navegadores suelen aplicar sangría a <mark>&lt;blockquote&gt;</mark>los elementos.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;p&gt;Aquí hay una cita del sitio web de WWF:&lt;/p&gt;<br>
+                        &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;<br>
+                        Durante 60 años, WWF ha trabajado para ayudar a las personas y a la naturaleza a prosperar. Como
+                        organización conservacionista líder en el mundo, WWF trabaja en casi 100 países. En todos los
+                        niveles, colaboramos con personas de todo el mundo para desarrollar y ofrecer soluciones
+                        innovadoras que protejan a las comunidades, la vida silvestre y los lugares en los que viven. <br>
+                        &lt;/blockquote&gt;
+                    </td>
+                </tr>
+            </table>
+
+            <h3>HTML &lt;q&gt; para citas breves</h3>
+            <p>El elemento HTML <mark>&lt;q&gt;</mark> define una cita breve. Los navegadores normalmente insertan comillas alrededor de la cita. </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;p&gt;El objetivo de WWF es: &lt;q&gt; Construir un futuro donde las personas vivan en armonía con la naturaleza.&lt;/q&gt;&lt;/p&gt;
+                    </td>
+                </tr>
+            </table>
+
+            <h3>HTML &lt;abbr&gt; para abreviaturas</h3>
+            <p>El elemento HTML <mark>&lt;abbr&gt;</mark> define una abreviatura o un acrónimo.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">&lt;p&gt;La &lt;abbr title="Organización Mundial de la Salud"&lt;OMS&gt;/abbr&gt; fue fundada en 1948.&lt;/p&gt;
+                    </td>
+                </tr>
+            </table>
+
+            <h3>HTML &lt;address&gt; para información de contacto</h3>
+            <p>El elemento HTML <mark>&lt;address&gt;</mark> define la información de contacto del autor/propietario de un documento o artículo.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;address&gt;<br>
+                        Escrito por John Doe.&lt;br&gt;<br>
+                        Visitanos en:&lt;br&gt;<br>
+                        Ejemplo.com&lt;br&gt;<br>
+                        Box 564, Disneyland&lt;br&gt;<br>
+                        USA<br>
+                        &lt;/address&gt;<br>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>HTML &lt;cite&gt; para el título del trabajo</h3>
+            <p>El elemento HTML <mark>&lt;cite&gt;</mark> define el título de una obra creativa.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;p&gt;&lt;cite&gt;El Grito&lt;/cite&gt;de Edvard Munch. Pintado en 1893. &lt;/p&gt;
+                    </td>
+                </tr>
+            </table>
+
+            <h3>HTML &lt;bdo&gt; para anulación bidireccional</h3>
+            <p>El elemento HTML <mark>&lt;bdo&gt;</mark> se utiliza para anular la dirección del texto actual:</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;bdo dir="rtl"&gt;Este texto se escribirá de derecha a izquierda.&lt;/bdo&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <a href="">AVISO LEGAL</a>
+        <a href="">DATOS PERSONALES</a>
+        <a href="">POLITICA DE COOKIES</a>
+        <a href="contacto.html">CONTACTO</a>
+    </footer>
 </body>
 </html>

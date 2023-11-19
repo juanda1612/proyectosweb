@@ -70,11 +70,11 @@ footer{
     background-color: #F2D6BD;
 }
 .tabla{
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
     margin: auto;
     width: 50%;
 }
 table{
-    
     margin: auto;
     border: 1px solid #400101;
     border-collapse: collapse;
@@ -135,4 +135,15 @@ small{
     background-color: #6e0b0b   ;
     border-radius: 6px;
     border: 2px solid #6e0b0b;
+}
+mark{
+    font-weight: bold;
+    color: #F2D6BD;
+    font-size: 15px;
+    background-color: #6e0b0b   ;
+    border-radius: 6px;
+    border: 2px solid #6e0b0b;
+}
+.ltColor{
+    color: #6e0b0b ;
 }
