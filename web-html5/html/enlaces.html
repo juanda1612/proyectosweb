@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enlaces</title>
     <link rel="stylesheet" href="../styles/estilos.css">
+    <script src="../scripts/script.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Enlaces</h1>
@@ -16,7 +19,7 @@
     <main class="vertical">
         <section class="vertical">
             <div>
-                <h2 id="enlacesSintaxis">Sintaxis</h2>
+                <h2 id="enlaceSintaxis">Sintaxis</h2>
             </div>
             <p>
                 La etiqueta HTML <mark>&lt;a&gt;</mark> define un hipervínculo. Tiene la siguiente sintaxis:
@@ -30,14 +33,124 @@
                 </tr>
             </table>
             <p>
-                El atributo más importante del <mark>&lt;a&gt;</mark> elemento es el <mark> href</mark> atributo, que indica el destino del enlace. <br><br>
+                El atributo más importante del <mark>&lt;a&gt;</mark> elemento es el <mark> href</mark> atributo, que
+                indica el destino del enlace. <br><br>
 
-                El <i>texto del enlace</i>  es la parte que será visible para el lector. <br><br>
-                
+                El <i>texto del enlace</i> es la parte que será visible para el lector. <br><br>
+
                 Al hacer clic en el texto del enlace, se enviará al lector a la dirección URL especificada.
             </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;a href="https://www.prueba.com/"&gt;Visita mi pagina &lt;/a&gt;
+                    </td>
+                </tr>
+            </table>
         </section>
+        <section class="vertical">
+            <div>
+                <h2 id="enlaceRutas">URL absolutas frente a URL relativas</h2>
+            </div>
+            <p>El ejemplo anterior utiliza una URL absoluta(una dirección web completa) en el atributo
+                <mark>href</mark>.</p>
+            <p>Un enlace local (un enlace a una página dentro del mismo sitio web) se especifica con una <strong>URL
+                    relativa</strong> (sin la parte "https://www"):</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;h2&gt;URLs absolutas &lt;/h2&gt;<br>
+                        &lt;a href="https://www.prueba.com/"&gt;Visita mi pagina &lt;/a&gt;<br>
+                        &lt;a href="https://www.prueba2.com/"&gt;Visita mi pagina 2 &lt;/a&gt;<br><br>
 
+                        &lt;h2&gt;URLs relativas &lt;/h2&gt;<br>
+                        &lt;a href="prueba.html"&gt;Visita mi pagina &lt;/a&gt;<br>
+                        &lt;a href="../html/prueba2.html"&gt;Visita mi pagina 2 &lt;/a&gt;
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Crear un marcador en HTML</h3>
+            <p>Los marcadores pueden resultar útiles si una página web es muy larga.</p>
+            <p>Para crear un marcador, primero cree el marcador y luego agréguele un enlace.</p>
+            <p>Cuando se hace clic en el enlace, la página se desplazará hacia abajo o hacia arriba hasta la ubicación con el marcador.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;h2 id="C5"&gt;Capítulo 5&lt;/h2&gt;
+                    </td>
+                </tr>
+            </table>
+            <p>Luego, agregue un enlace al marcador ("Saltar al Capítulo 5"), desde la misma página:</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;a href="#C5"&gt;Ir al capítulo 5&lt;/h2&gt;
+                    </td>
+                </tr>
+            </table>
+            <p>También puedes agregar un enlace a un marcador en otra página:</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;a href="html_prueba.html#C5"&gt;Ir al capítulo 5&lt;/h2&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="vertical">
+            <div>
+                <h2 id="enlaceImagen">Imagen como enlace</h2>
+            </div>
+            <p>Para usar una imagen como enlace, simplemente coloque la <small>&lt;img&gt;</small> etiqueta dentro de la
+                <small>&lt;a&gt;</small>etiqueta:</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;a href="https://www.prueba.com/"&gt; <br>
+                        &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt; <br>
+                        &lt;/a&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="vertical">
+            <div>
+                <h2 id="enlaceTitulo">Títulos de enlaces</h2>
+            </div>
+            <p>El atributo <mark>title</mark> especifica información adicional sobre un elemento. La información suele mostrarse como
+                texto de información sobre herramientas cuando el ratón se mueve sobre el elemento.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;a href="https://www.prueba.com/" title="Visita la seccion HTML"&gt; Visita nuestro tutorial de HTML &lt;/a&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
     </main>
 </body>
+
 </html>

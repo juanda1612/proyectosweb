@@ -1,14 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagenes</title>
-    <link rel="stylesheet" href="/web-html5/styles/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <script src="../scripts/script.js"></script>
 </head>
+
 <body>
-    <nav>
-        <a href="/web-html5/index.html">Home</a>
-    </nav>
+    <header>
+        <h1>Imágenes</h1>
+        <nav>
+            <a href="/web-html5/index.html">Home</a>
+        </nav>
+    </header>
+    <main class="vertical">
+        <section class="vertical">
+            <div>
+                <h2>Sintaxis</h2>
+            </div>
+            <p>La etiqueta <mark>&lt;img&gt;</mark> HTML se utiliza para incrustar una imagen en una página web.</p>
+            <p>La etiqueta <mark>&lt;img&gt;</mark> tiene dos atributos obligatorios:</p>
+            <ul>
+                <li><strong>src:</strong> especifica la ruta a la imagen.</li>
+                <li><strong>alt:</strong> especifica un texto alternativo para la imagen.</li>
+            </ul>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;img src="url" alt="texto alternativo"&gt;
+                    </td>
+                </tr>
+            </table>
+            <h3>Imágenes en otra carpeta</h3>
+            <p>Si tienes tus imágenes en una subcarpeta, debes incluir el nombre de la carpeta en el atributo <mark>src</mark>:</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;img src="/images/url.gif" alt="texto alternativo"&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="vertical">
+            <div>
+                <h2>Atributos</h2>
+            </div>
+            <h3>Atributo src</h3>
+            <p>El atributo <mark>src</mark> especifica la ruta (URL) a la imagen.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;img <strong>src</strong>="url"&gt;
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Atributo alt</h3>
+            <p>El atributo <mark>alt</mark> proporciona un texto alternativo para una imagen, si el usuario por algún motivo
+                no puede verla (debido a una conexión lenta, un error en el atributo src o si el usuario usa un lector
+                de pantalla).</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;img src="url" <strong>alt</strong>="texto alternativo"&gt;
+                    </td>
+                </tr>
+            </table>
+            
+            <h3>Atributos width y height</h3>
+            <p>Puede utilizar los atributos <mark>width</mark> y <mark>height</mark> para especificar el ancho y el alto de una imagen.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;img src="url" alt="texto alternativo" <b>width</b>="500"<b>height</b>="600"&gt;
+                    </td>
+                </tr>
+            </table>
+            <p>Los atributos <mark>width</mark> y <mark>height</mark> siempre definen el ancho y el alto de la imagen en píxeles.</p>
+        </section>
+        <section class="vertical">
+            <div>
+                <h2>Imagen flotante</h2>
+            </div>
+            <p>Utilice la propiedad CSS <mark>float</mark> para permitir que la imagen flote hacia la derecha o hacia la izquierda de un texto:</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;p&gt;
+                        &lt;img src="url" alt="texto alternativo" <b>style="float:right;</b>width:42px;height:42px;"&gt;La imagen se posicionara a la derecha
+                        &lt;/p&gt;<br><br>
+
+                        &lt;p&gt;
+                        &lt;img src="url" alt="texto alternativo" <b>style="float:left;</b>width:42px;height:42px;"La imagen se posicionara a la izquierda
+                        &lt;/p&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
+    </main>
 </body>
 </html>
