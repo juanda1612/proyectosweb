@@ -4,11 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas</title>
-    <link rel="stylesheet" href="/web-html5/styles/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <script src="../scripts/script.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="/web-html5/index.html">Home</a>
-    </nav>
+    <header>
+        <h1>Listas</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <section class="vertical">
+            <div>
+                <h2 id="listasHtml">Listas HTML</h2>
+            </div>
+
+            <h3>Lista desordenada</h3>
+            <p>
+                Una lista desordenada comienza con la <mark>&lt;ul&gt;</mark> etiqueta. Cada elemento de la lista comienza con la <mark>&lt;li&gt;</mark> etiqueta. <br><br>
+
+                Los elementos de la lista estarán marcados con viñetas (pequeños círculos negros) de forma predeterminada:
+            </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;ul&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Cafe&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;te&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;leche&lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Lista ordenada</h3>
+            <p>
+                Una lista ordenada comienza con la <mark>&lt;ol&gt;</mark> etiqueta. Cada elemento de la lista comienza con la <mark>&lt;li&gt;</mark> etiqueta. <br><br> 
+
+                Los elementos de la lista estarán marcados con números de forma predeterminada:
+            </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;ol&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Cafe&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;te&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;leche&lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Listas de descripción</h3>
+            <p>
+                HTML también admite listas de descripciones. <br><br>
+
+                Una lista de descripción es una lista de términos, con una descripción de cada término. <br><br>
+                
+                La <mark>&lt;dl&gt;</mark> etiqueta define la lista de descripción, la <mark>&lt;dt&gt;</mark> etiqueta define el término (nombre) y la <mark>&lt;dd&gt;</mark> etiqueta describe cada término:
+            </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;dl&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Cafe&lt;/dt&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;bebida negra caliente&lt;/dd&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;leche&lt;/dt&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;bebida blanca fria&lt;/dd&gt;<br>
+                        &lt;/dl&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
+    </main>
 </body>
 </html>

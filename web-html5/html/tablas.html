@@ -4,14 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas</title>
-    <link rel="stylesheet" href="/web-html5/styles/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <script src="../scripts/script.js"></script>
 </head>
 <body>
     <header>
         <h1>Tablas</h1>
+            <nav>
+                <a href="../index.html">Home</a>
+            </nav>
     </header>
-    <nav>
-        <a href="/web-html5/index.html">Home</a>
-    </nav>
+    <main class="vertical">
+        <section class="vertical">
+            <div>
+                <h2 id="tablaDefinir">Definir una tabla</h2>
+            </div>
+            <p> <p>Una tabla en HTML consta de celdas de tabla dentro de filas y columnas.</p></p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;table&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Compañia&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Contacto&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;pais&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;HTML SL&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Maria&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;España&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &lt;table&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="vertical">
+            <div>
+                <h2 id="tablaCeldas">Celdas de tabla</h2>
+            </div>
+            <p>
+                Cada celda de la tabla está definida por una etiqueta <mark>&lt;td&gt;</mark> y una <mark>&lt;/td&gt;</mark>. <br> <br>
+                Todo lo que está entre <mark>&lt;td&gt;</mark> y <mark>&lt;/td&gt;</mark> es el contenido de la celda de la tabla.
+            </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;table&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;HTML SL&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Maria&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;España&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &lt;table&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="vertical">
+            <div>
+                <h2 id="tablaFilas">Filas de la tabla</h2>
+            </div>
+            <p>Cada fila de la tabla comienza con una <mark>&lt;tr&gt;</mark> y termina con una etiqueta <mark>&lt;/tr&gt;</mark>.</p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;table&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Tobias&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Maria&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Linus&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;16&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;14&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;10&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &lt;table&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="vertical">
+            <div>
+                <h2 id="tablaEncabezados">Encabezados de tabla</h2>
+            </div>
+            <p>
+                A veces desea que sus celdas sean celdas de encabezado de tabla. En esos casos utilice la <mark>&lt;th&gt;</mark> etiqueta en lugar de la etiqueta: <mark>&lt;td&gt;</mark>
+            </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;table&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Persona&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Persona2&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Persona3&lt;/th&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Tobias&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Maria&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Linus&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;16&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;14&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;10&lt;/td&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+                        &lt;table&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
+    </main>
 </body>
 </html>
