@@ -1,8 +1,8 @@
 body{
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     background-color: #F2F2F2;
 }
 header{
@@ -67,6 +67,7 @@ section{
 }
 
 footer{
+    height: 200px;
     padding: 10px;
     background-color: #F2D6BD;
 }
@@ -83,6 +84,7 @@ table{
     
 }
 td, th{
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     border: 3px solid #400101;
     border-collapse: collapse;
@@ -110,7 +112,6 @@ td{
     border-bottom-right-radius: 10px ;
 }
 div{
-   
     background-color: #BF7F5A;
     border: 2px solid #400101;
     height: 100%;
@@ -163,4 +164,47 @@ mark{
 #scroll-to-top:hover{
     transition: 0.5s;
     background-color:  #6e0b0b;
+}
+
+form {
+    border-radius: 20px;
+    font-size: 20px;
+    color: #F2D6BD;
+    background-color:  #6e0b0b;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+button {
+    background-color: #BF7F5A;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #F2D6BD;
+    transition: 1s;
+}
+.container {
+    font-size: 20px;
+    color: #F2D6BD;
+    background-color: #400101;
+    border-end-end-radius: 20px;
+    border-top-left-radius: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center; 
 }

@@ -1,14 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloques</title>
-    <link rel="stylesheet" href="/web-html5/styles/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <script src="../scripts/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav>
-        <a href="/web-html5/index.html">Home</a>
-    </nav>
+    <header>
+        <h1>Bloques</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+        </nav>
+    </header>
+    <main class="vertical">
+        <section class="vertical">
+            <div>
+                <h2 id="bloque">Elementos a nivel de bloque</h2>
+            </div>
+            <p>Un elemento a nivel de bloque siempre comienza en una nueva línea y los navegadores agregan
+                automáticamente algo de espacio (un margen) antes y después del elemento. <br> <br>
+
+                Un elemento a nivel de bloque siempre ocupa todo el ancho disponible (se extiende hacia la izquierda y
+                hacia la derecha tanto como puede). <br> <br>
+
+                Dos elementos de bloque comúnmente utilizados son: <mark>&lt;p&gt;</mark> y <mark>&lt;div&gt;</mark>.
+            </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;p&gt;Hola mundo&lt;/p&gt;<br>
+                        &lt;div&gt;Hola mundo&lt;/div&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="vertical">
+            <div>
+                <h2 id="bloqueLinea">Elementos en línea</h2>
+            </div>
+            <p>
+                Un elemento en línea no comienza en una nueva línea. <br><br>
+
+                Un elemento en línea solo ocupa el ancho necesario. <br><br>
+
+                Este es un elemento <mark>&lt;span&gt;</mark> dentro de un párrafo.
+            </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;span&gt;Hola mundo&lt;/span&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="vertical">
+            <div>
+                <h2 id="bloqueDiv">El elemento &lt;div&gt;</h2>
+            </div>
+            <p>
+                El <mark>&lt;div&gt;</mark> elemento se utiliza a menudo como contenedor para otros elementos HTML.
+                <br><br>
+
+                El <mark>&lt;div&gt;</mark> elemento no tiene atributos obligatorios, pero <mark>&lt;style&gt;</mark> y
+                <mark>&lt;class&gt;</mark> son <mark>&lt;id&gt;</mark> comunes. <br><br>
+
+                Cuando se usa junto con CSS, el <mark>&lt;div&gt;</mark> elemento se puede usar para diseñar bloques de
+                contenido:
+            </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;div style="background-color:black;color:white;padding:20px;"&gt;<br>
+                        &nbsp;&nbsp;&lt;h2&gt;Londres&lt;/h2&gt; <br>
+                        &nbsp;&nbsp;&lt;p&gt;Londres es la capital de Inglaterra. Es la ciudad más poblada del Reino
+                        Unido, con un área metropolitana de más de 13 millones de habitantes.&lt;/p&gt;
+                        &lt;/div&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="vertical">
+            <div>
+                <h2 id="bloqueSpan">El elemento &lt;span&gt;</h2>
+            </div>
+            <p>
+                El <mark>&lt;span&gt;</mark> elemento es un contenedor en línea que se utiliza para marcar una parte de
+                un texto o una parte de un documento. <br><br>
+
+                El <mark>&lt;span&gt;</mark> elemento no tiene atributos obligatorios, pero <mark>&lt;style&gt;</mark> y
+                <mark>&lt;class&gt;</mark> son <mark>&lt;id&gt;</mark>comunes. <br><br>
+
+                Cuando se usa junto con CSS, el <mark>&lt;span&gt;</mark> elemento se puede usar para diseñar partes del
+                texto:
+            </p>
+            <table class="tabla">
+                <tr>
+                    <th class="header">HTML</th>
+                </tr>
+                <tr>
+                    <td class="data">
+                        &lt;p&gt;Mi madre tiene los ojos &lt;span style="color:blue;font-weight:bold;"&gt;azules&lt;/span&gt; y mi padre  tiene los ojos
+                        &lt;span style="color:darkolivegreen;font-weight:bold;"&gt;verdes&lt;/span&gt;&lt;/p&gt;
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
+    </main>
+    <footer>
+        <a href="">AVISO LEGAL</a>
+        <a href="">DATOS PERSONALES</a>
+        <a href="">POLITICA DE COOKIES</a>
+        <a href="html/contacto.html">CONTACTO</a>
+    </footer>
 </body>
+
 </html>

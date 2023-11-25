@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--Añadir un formulario de contacto con varios controles-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contacto</title>
     <link rel="stylesheet" href="../styles/estilos.css">
+
+    <script src="../scripts/contacto.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="../index.html">Home</a>
-    </nav>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Introduce tu nombre" required>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Introduce tu correo" required>
+    
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="button" onclick="submitForm()">Enviar</button>
+            <button type="button" onclick="viewSubmission()">Ver Envío</button>
+        </form>
+    </main>
+    <footer>
+        <a href="">AVISO LEGAL</a>
+        <a href="">DATOS PERSONALES</a>
+        <a href="">POLITICA DE COOKIES</a>
+        <a href="html/contacto.html">CONTACTO</a>
+    </footer>
 </body>
 </html>
