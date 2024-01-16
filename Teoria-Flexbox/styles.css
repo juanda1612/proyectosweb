@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFC300;
+    
+}
+
+
+
+.container{
+    
+    display: flex; /* todo lo que meta en esta clase se rige por las reglas de flexbox*/
+    gap: 20px;
+    background-color: white ;
+    padding: 20px;
+    border: 3px solid black;
+    margin: auto;
+    /* propiedades flexbox*/
+    /* si no cabe en una fila o columna, los elementos saltan a la siguiente*/
+    flex-wrap: wrap;
+    /* si quiero disponer los elementos en horizontal o vertical */
+    flex-direction: row;
+    /* para alinear los elementos en la FILA o columna*/
+    justify-content: flex-start;
+    /* para ver la siguiente propiedad vamos a poner un alto determinado al contenedor*/
+    height: 900px;
+    /* te dice donde quieres la fila o la columna respecto al contenedor: al principio, al final, en el centro...*/
+    align-items: center;
+}
+
+.cajita{
+    background-color: #33FF57;
+    width: 75px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    max-height: 75px;
+    font-size: 30px;
+}
