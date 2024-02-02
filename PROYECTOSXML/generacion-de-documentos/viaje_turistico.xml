@@ -1,0 +1,18 @@
+<viaje_turistico>
+    <cliente>
+        <nombre>Pepito</nombre>
+        <apellido1>Pepito</apellido1>
+        <apellido2></apellido2>
+    </cliente>
+    <viaje>
+        <fecha_inicio>01/01/24</fecha_inicio>
+        <fecha_fin>31/12/25</fecha_fin>
+        <origen_viaje>España</origen_viaje>
+        <precio>1$</precio>
+    </viaje>
+    <destino>
+        <nombre_ciudad>Lisboa</nombre_ciudad>
+        <nombre_hotel>Hotel</nombre_hotel>
+        <numero_noches>300</numero_noches>
+    </destino>
+</viaje_turistico>
