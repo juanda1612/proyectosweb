@@ -1,0 +1,179 @@
+curriculum {
+    font-family: Arial, sans-serif;
+    margin: 20px;    
+}
+
+persona {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+persona::before{
+    content: "CURRICULUM VITAE";
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+nombre {
+    display: block;
+}
+nombre::before {
+    content: "Nombre: ";
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: underline;
+}
+apellido {
+    display: block
+}
+
+apellido::before {
+    content: "Apellidos: ";
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+año_nacimiento {
+    display: block
+}
+
+año_nacimiento::before{
+    content: "Año de nacimiento: ";
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+residencia{
+    display: inline-table;
+    border: black solid;
+    margin-top: 20px;
+}
+residencia::before{
+    display: table-caption;
+    font-weight: bold;
+    border: black solid;
+    content: "Residencia";
+    padding-bottom: 5px;
+}
+
+ciudad, pais{
+    display: table-cell;
+    text-align: center;
+    border: thin solid;
+    padding:10px 20px;
+}
+ciudad::before{
+    display: table-cell;
+    content: "Ciudad";
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+pais::before{
+    display: table-cell;
+    content: "Pais";
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+datos_contacto {
+    display: block;
+    border: black solid;
+    width: 360px;
+    margin-top: 20px;
+}
+datos_contacto::before{
+    display: table-caption ;
+    content: "Datos de contacto ";
+    font-weight: bold;
+    border-bottom: black solid;
+    padding-bottom: 5px;
+    width: 360px ;
+}
+
+telefono, correo_electronico, perfil_linkedin {
+    display: table-row;
+    text-align: center;
+}
+telefono::before{
+    display: table-cell;
+    content: "Telefono: ";
+    font-weight: bold;
+    padding: 0px 5px 10px 5px;
+}
+correo_electronico::before{
+    display: table-cell;
+    content: "Correo electronico: ";
+    font-weight: bold;
+    padding: 0px 5px 10px 0px;
+}
+perfil_linkedin::before{
+    display: table-cell;
+    content: "Perfil Linkedin: ";
+    font-weight: bold;
+    padding: 0px 5px 10px 5px;
+}
+
+descripcion {
+    display: block;
+    width: 50%;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+descripcion::before{
+    display: block;
+    content: "Breve descripcion: ";
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+competencias {
+    display: block;
+    margin-top: 20px;
+}
+
+competencia_nombre {
+    display: block;
+    font-weight: bold;
+}
+
+nivel {
+    display: block;
+    font-style: italic;
+}
+
+formacion_academica {
+    display: block;
+    margin-top: 20px;
+}
+
+titulacion {
+    display: block;
+    font-weight: bold;
+}
+
+centro, año_titulacion {
+    display: block;
+    margin-bottom: 10px;
+}
+
+experiencia {
+    display: block;
+    margin-top: 20px;
+}
+
+puesto {
+    display: block;
+    font-weight: bold;
+}
+
+empresa, año_inicio, año_finalizacion {
+    display: block;
+    margin-bottom: 10px;
+}

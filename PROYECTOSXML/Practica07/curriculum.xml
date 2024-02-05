@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="curriculum.css"?>
+<curriculum>
+    <persona>
+        <nombre>Pepito</nombre>
+        <apellido>Palo</apellido>
+        <año_nacimiento>1999</año_nacimiento>
+        <residencia>
+            <ciudad>Madrid</ciudad>
+            <pais>España</pais>
+        </residencia>
+        <datos_contacto>
+            <telefono>625784168</telefono>
+            <correo_electronico>pepito@gmail.com</correo_electronico>
+            <perfil_linkedin>peito</perfil_linkedin>
+        </datos_contacto>
+        <descripcion>Duis sint dolor aliquip non labore pariatur ut irure occaecat. Aliqua id ea minim eu eiusmod sit adipisicing laborum qui. Sit est occaecat labore commodo aute elit irure adipisicing ad ad. Aliquip voluptate non quis Lorem ea consequat sunt amet exercitation duis excepteur. Enim elit cupidatat amet sit incididunt officia irure eiusmod commodo cupidatat fugiat.</descripcion>
+        <competencias>
+            <competencia_nombre>Laborum</competencia_nombre>
+            <nivel>voluptate</nivel>
+        </competencias>
+        <formacion_academica>
+            <titulacion>Duis</titulacion>
+            <centro>irure</centro>
+            <año_titulacion>2003</año_titulacion>
+        </formacion_academica>
+        <experiencia>
+            <puesto>irure</puesto>
+            <empresa>eiusmod</empresa>
+            <año_inicio>2010</año_inicio>
+            <año_finalizacion>2011</año_finalizacion>
+        </experiencia>
+    </persona>
+</curriculum>
