@@ -4,6 +4,7 @@ curriculum {
 }
 
 persona {
+    text-align: center;
     display: block;
     background-color: #f0f0f0;
     padding: 20px;
@@ -20,6 +21,7 @@ persona::before{
 
 nombre {
     display: block;
+    margin-top: 20px;
 }
 nombre::before {
     content: "Nombre: ";
@@ -50,35 +52,42 @@ año_nacimiento::before{
 }
 
 residencia{
-    display: inline-table;
+    display: block;
     border: black solid;
     margin-top: 20px;
+    width: 360px;
 }
 residencia::before{
-    display: table-caption;
-    font-weight: bold;
-    border: black solid;
+    display: inline-table;
     content: "Residencia";
-    padding-bottom: 5px;
+    font-weight: bold;
+    border-bottom: black solid;
+    width: 360px;
 }
 
 ciudad, pais{
     display: table-cell;
     text-align: center;
+    padding-top: 5px;
     border: thin solid;
-    padding:10px 20px;
+    width: 360px;
+    height: 80px;
 }
 ciudad::before{
     display: table-cell;
     content: "Ciudad";
     font-weight: bold;
-    padding-bottom: 5px;
+    border-bottom: black solid;
+    padding: 5px;
+    width: 360px;
 }
 pais::before{
     display: table-cell;
     content: "Pais";
     font-weight: bold;
-    padding-bottom: 5px;
+    border-bottom: black solid;
+    padding: 5px;
+    width: 360px;
 }
 
 datos_contacto {
@@ -122,58 +131,162 @@ perfil_linkedin::before{
 descripcion {
     display: block;
     width: 50%;
-    text-align: justify;
     margin-top: 20px;
+    text-align: justify;
 }
 
 descripcion::before{
     display: block;
     content: "Breve descripcion: ";
+    text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 competencias {
     display: block;
+    border: black solid;
     margin-top: 20px;
+    width: 360px;
 }
-
-competencia_nombre {
-    display: block;
+competencias::before{
+    display: inline-table;
+    content: "Competencias";
     font-weight: bold;
+    border-bottom: black solid;
+    width: 360px;
 }
 
-nivel {
-    display: block;
-    font-style: italic;
+competencia_nombre, nivel {
+    display: table-cell;
+    text-align: center;
+    padding-top: 5px;
+    border: thin solid;
+    width: 360px;
+    height: 80px;
+}
+
+competencia_nombre::before {
+    display: table-cell;
+    content: "Nombre: ";
+    font-weight: bold;
+    border-bottom: black solid;
+    padding: 5px;
+    width: 360px;
+}
+nivel::before {
+    display: table-cell;
+    content: "Nivel: ";
+    font-weight: bold;
+    border-bottom: black solid;
+    padding: 5px;
+    width: 360px;
 }
 
 formacion_academica {
     display: block;
+    border: black solid;
     margin-top: 20px;
+    width: 600px;
 }
 
-titulacion {
-    display: block;
+formacion_academica::before{
+    display: inline-table;
+    content: "Competencias";
     font-weight: bold;
+    border-bottom: black solid;
+    width: 600px;
 }
 
-centro, año_titulacion {
-    display: block;
-    margin-bottom: 10px;
+titulacion, centro, año_titulacion {
+    display: table-cell;
+    text-align: center;
+    padding-top: 5px;
+    border: thin solid;
+    height: 80px;
+}
+
+titulacion::before {
+    display: table-cell;
+    content: "Titulacion";
+    font-weight: bold;
+    border-bottom: black solid;
+    padding: 5px;
+    width: 600px;
+}
+
+centro::before {
+    display: table-cell;
+    content: "Centro";
+    font-weight: bold;
+    border-bottom: black solid;
+    padding: 5px;
+    width: 600px;
+}
+
+año_titulacion::before {
+    display: table-cell;
+    content: "Año de titulacion";
+    font-weight: bold;
+    border-bottom: black solid;
+    padding: 5px;
+    width: 600px;
 }
 
 experiencia {
     display: block;
+    border: black solid;
     margin-top: 20px;
+    width: 450px;
 }
 
-puesto {
-    display: block;
+experiencia::before{
+    display: table-caption ;
+    content: "Experiencia";
     font-weight: bold;
+    border-bottom: black solid;
+    padding-bottom: 5px;
+    width: 450px;
 }
 
-empresa, año_inicio, año_finalizacion {
-    display: block;
-    margin-bottom: 10px;
+puesto, empresa, año_inicio, año_finalizacion {
+    display: table-row;
+    text-align: center;
+    width: 450px;
+    height: 10px;
+}
+
+puesto::before {
+    display: table-cell;
+    content: "Puesto";
+    font-weight: bold;
+    border-bottom: black solid;
+    padding: 10px;
+    
+}
+
+empresa::before {
+    display: table-cell;
+    content: "Empresa";
+    font-weight: bold;
+    border-bottom: black solid;
+    padding: 10px;
+    
+}
+
+año_inicio::before {
+    display: table-cell;
+    content: "Año de inicio";
+    font-weight: bold;
+    border-bottom: black solid;
+    padding: 10px;
+    
+}
+
+año_finalizacion::before {
+    display: table-cell;
+    content: "Año de finalizacion";
+    font-weight: bold;
+    padding: 10px;
 }
