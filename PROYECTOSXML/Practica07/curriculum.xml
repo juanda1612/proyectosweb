@@ -3,7 +3,8 @@
 <curriculum>
     <persona>
         <nombre>Pepito</nombre>
-        <apellido>Palo</apellido>
+        <apellido1>Palo</apellido1>
+        <apellido2>Palo</apellido2>
         <año_nacimiento>1999</año_nacimiento>
         <residencia>
             <ciudad>Madrid</ciudad>
@@ -12,23 +13,48 @@
         <datos_contacto>
             <telefono>625784168</telefono>
             <correo_electronico>pepito@gmail.com</correo_electronico>
-            <perfil_linkedin>peito</perfil_linkedin>
+            <perfil_linkedin>pepito</perfil_linkedin>
         </datos_contacto>
         <descripcion>Duis sint dolor aliquip non labore pariatur ut irure occaecat. Aliqua id ea minim eu eiusmod sit adipisicing laborum qui. Sit est occaecat labore commodo aute elit irure adipisicing ad ad. Aliquip voluptate non quis Lorem ea consequat sunt amet exercitation duis excepteur. Enim elit cupidatat amet sit incididunt officia irure eiusmod commodo cupidatat fugiat.</descripcion>
         <competencias>
-            <competencia_nombre>Laborum</competencia_nombre>
-            <nivel>voluptate</nivel>
+            <competencia>
+                <competencia_nombre titulo="primera">Laborum</competencia_nombre>
+                <nivel titulo="primeraN">medio</nivel>
+            </competencia>
+            <competencia>
+                <competencia_nombre>Laborum</competencia_nombre>
+                <nivel>medio</nivel>
+            </competencia>
+            <competencia>
+                <competencia_nombre>Laborum</competencia_nombre>
+                <nivel>medio</nivel>
+            </competencia>    
         </competencias>
         <formacion_academica>
-            <titulacion>Duis</titulacion>
-            <centro>irure</centro>
-            <año_titulacion>2003</año_titulacion>
+            <titulo>
+                <titulacion titulo="primeraT">Duis</titulacion>
+                <centro titulo="primeraC">irure</centro>
+                <año_titulacion titulo="primeraA">2003</año_titulacion>
+            </titulo>
+            <titulo>
+                <titulacion>Dois</titulacion>
+                <centro>Eiius</centro>
+                <año_titulacion>2008</año_titulacion>
+            </titulo>         
         </formacion_academica>
         <experiencia>
-            <puesto>irure</puesto>
-            <empresa>eiusmod</empresa>
-            <año_inicio>2010</año_inicio>
-            <año_finalizacion>2011</año_finalizacion>
-        </experiencia>
+            <experiencias>
+                <puesto titulo="primeraP">irure</puesto>
+                <empresa titulo="primeraE">eiusmod</empresa>
+                <año_inicio titulo="primeraAI">2010</año_inicio>
+                <año_finalizacion titulo="primeraAF">2011</año_finalizacion>
+            </experiencias>
+            <experiencias>
+                <puesto>iru</puesto>
+                <empresa>eirusm</empresa>
+                <año_inicio>2011</año_inicio>
+                <año_finalizacion>2012</año_finalizacion>
+            </experiencias>
+        </experiencia>    
     </persona>
 </curriculum>

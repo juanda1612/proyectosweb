@@ -12,6 +12,7 @@ div p {
 
 /* Selector de hijo: fondo en azul en cualquier span que sea hijo de un p*/
 p > span {
+    content: "AAAAAAAAAAA";
     background-color: DodgerBlue;
 }
 
