@@ -2,7 +2,7 @@
     <cliente>
         <nombre>Pepito</nombre>
         <apellido1>Pepito</apellido1>
-        <apellido2></apellido2>
+        <apellido2>null</apellido2>
     </cliente>
     <viaje>
         <fecha_inicio>01/01/24</fecha_inicio>

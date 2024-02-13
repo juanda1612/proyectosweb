@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nota [
+<!ELEMENT nota (para,de,cabecera,cuerpo+)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT cabecera (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
+]>
+
+<nota>
+    <para>Carlos</para>
+    <de>Ainara</de>
+    <cabecera>Examen</cabecera>
+    <cuerpo>¿Que has sacado?</cuerpo>
+    <cuerpo>¿Que has sacado?</cuerpo>
+    
+</nota>

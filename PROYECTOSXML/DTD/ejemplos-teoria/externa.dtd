@@ -1,0 +1,5 @@
+<!ELEMENT nota (para,de,cabecera,cuerpo)><!-- El elemento raiz debe tener estos cuatro elementos y ademas en ese orden -->
+<!ELEMENT para (#PCDATA)><!-- #PCDATA Significa que tiene ,como un String-->
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT cabecera (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
