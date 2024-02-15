@@ -1,0 +1,14 @@
+<!ELEMENT persona (nombre, apellido1, apellido2,residencia,datos_de_contacto,descripcion,competencias,formacion,experiencia)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT residencia (ciudad, pais)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT datos_de_contacto (telefono, correo_electronico,perfil_linkedin)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT correo_electronico (#PCDATA)>
+<!ELEMENT perfil_linkedin (#PCDATA)>
+<!ELEMENT competencias (#PCDATA)>
+<!ELEMENT formacion (#PCDATA)>
+<!ELEMENT experiencia (#PCDATA)>
