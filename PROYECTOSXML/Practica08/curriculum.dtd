@@ -1,0 +1,29 @@
+<!ELEMENT curriculum (persona)>
+<!ELEMENT persona (nombre, apellido1, apellido2, año_nacimiento, residencia, datos_contacto, descripcion, competencias,formacion_academica, experiencia)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT año_nacimiento (#PCDATA)>
+<!ELEMENT residencia (ciudad, pais)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT datos_contacto (telefono, correo_electronico,perfil_linkedin)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT correo_electronico (#PCDATA)>
+<!ELEMENT perfil_linkedin (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT competencias (competencia+)>
+<!ELEMENT competencia (competencia_nombre, nivel)>
+<!ELEMENT competencia_nombre (#PCDATA)>
+<!ELEMENT nivel (#PCDATA)>
+<!ELEMENT formacion_academica (titulo+)>
+<!ELEMENT titulo (titulacion, centro, año_titulacion)>
+<!ELEMENT titulacion (#PCDATA)>
+<!ELEMENT centro (#PCDATA)>
+<!ELEMENT año_titulacion (#PCDATA)>
+<!ELEMENT experiencia (experiencias*)> <!-- pongo * porque puede que no tenga experiencia -->
+<!ELEMENT experiencias (puesto, empresa, año_inicio, año_finalizacion)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT año_inicio (#PCDATA)>
+<!ELEMENT año_finalizacion (#PCDATA)>

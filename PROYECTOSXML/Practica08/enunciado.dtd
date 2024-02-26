@@ -1,7 +1,8 @@
-<!ELEMENT persona (nombre, apellido1, apellido2,residencia,datos_de_contacto,descripcion,competencias,formacion,experiencia)>
+<!ELEMENT persona (nombre, apellido1, apellido2,año_de_nacimiento ,residencia,datos_de_contacto,descripcion,competencias,formacion,experiencia)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT apellido1 (#PCDATA)>
 <!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT año_de_nacimiento (#PCDATA)>
 <!ELEMENT residencia (ciudad, pais)>
 <!ELEMENT ciudad (#PCDATA)>
 <!ELEMENT pais (#PCDATA)>
@@ -9,6 +10,16 @@
 <!ELEMENT telefono (#PCDATA)>
 <!ELEMENT correo_electronico (#PCDATA)>
 <!ELEMENT perfil_linkedin (#PCDATA)>
-<!ELEMENT competencias (#PCDATA)>
-<!ELEMENT formacion (#PCDATA)>
-<!ELEMENT experiencia (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT competencias (nombre, nivel)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nivel (#PCDATA)>
+<!ELEMENT formacion (titulacion, centro, año_titulacion)>
+<!ELEMENT titulacion (#PCDATA)>
+<!ELEMENT centro (#PCDATA)>
+<!ELEMENT año_titulacion (#PCDATA)>
+<!ELEMENT experiencia (puesto, empresa, año_inicio, año_final)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT año_inicio (#PCDATA)>
+<!ELEMENT año_final (#PCDATA)>
