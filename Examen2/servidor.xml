@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE servidor [
+    <!ELEMENT servidor (programa, fecha, alojamiento, servidor_virtual+)>
+    <!ELEMENT programa (#PCDATA)>
+    <!ATTLIST programa s_web (apache|iis) #REQUIRED>
+    <!ELEMENT fecha (fecha_creacion, fecha_actualizacion)>
+    <!ELEMENT fecha_creacion (#PCDATA)>
+    <!ELEMENT fecha_actualizacion (#PCDATA)>
+    <!ELEMENT alojamiento (nombre_empresa, precio)>
+    <!ELEMENT nombre_empresa (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT servidor_virtual (dominio, directorio, modo_seguro, incidentes*)>
+    <!ATTLIST servidor_virtual codigo ID #REQUIRED>
+    <!ELEMENT dominio (#PCDATA)>
+    <!ELEMENT directorio (#PCDATA)>
+    <!ELEMENT modo_seguro (#PCDATA)>
+    <!ATTLIST modo_seguro valor (true|false) 'true'>
+    <!ELEMENT incidentes (descripcion, solucion)>
+    <!ATTLIST incidentes id_servidor IDREF #REQUIRED>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT solucion (#PCDATA)>
+]>
+<servidor>
+    <programa s_web="apache">Wordpress</programa>
+    <fecha>
+        <fecha_creacion>2024-03-05</fecha_creacion>
+        <fecha_actualizacion>2024-03-10</fecha_actualizacion>
+    </fecha>
+    <alojamiento>
+        <nombre_empresa>lonos</nombre_empresa>
+        <precio>5</precio>
+    </alojamiento>
+    <servidor_virtual codigo="sv1">
+        <dominio> miweb.org</dominio>
+        <directorio> /var/www/miweb</directorio>
+        <modo_seguro valor="true" />
+        <incidentes id_servidor="sv1">
+            <descripcion> llenado de disco por logs</descripcion>
+            <solucion> implementar script de borrado de logs que se ejecute semanalmente</solucion>
+        </incidentes>
+    </servidor_virtual>
+</servidor>
