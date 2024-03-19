@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numero_dia_semana xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="numero_dia.xsd">
+1
+</numero_dia_semana>

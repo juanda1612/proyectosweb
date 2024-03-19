@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="dia_semana">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Lunes"/>
+                <xs:enumeration value="Martes"/>
+                <xs:enumeration value="Miercoles"/>
+                <xs:enumeration value="Jueves"/>
+                <xs:enumeration value="Viernes"/>
+                <xs:enumeration value="Sabado"/>
+                <xs:enumeration value="Domingo"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>
