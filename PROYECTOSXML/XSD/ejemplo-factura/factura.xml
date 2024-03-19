@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<factura>
+<factura
     xmlns:xs="http://www.w3.org/2001/XMKSchema-instance"
-    xs:noNamespaceSchemaLocation="factura.xsd"
+    xs:noNamespaceSchemaLocation="factura.xsd">
     <numero>1</numero>
     <cliente>
         <nombre>Ediciones Parainfo S.A</nombre>
