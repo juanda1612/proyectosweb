@@ -15,10 +15,10 @@
                 <xs:element name="telefono" minOccurs="0" maxOccurs="unbounded">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
-                        <xs:length value="9"/>
+                        <xs:pattern value="\d{9}"/>
                     </xs:restriction>
                 </xs:simpleType>
-            </xs:element>
+                </xs:element>
                 <xs:element name="propietario" type="propietario"/>
                 <xs:element name="libro" type="libro" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
