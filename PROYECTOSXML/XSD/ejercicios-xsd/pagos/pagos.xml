@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="pagos.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<pagos>
+  <nombre dni="123456789B">Javier Toledano</nombre>
+  <fechaNacimiento edad="17">1979-02-04</fechaNacimiento>
+  <hora>23:55:15</hora>
+  <hora>23:55:15</hora>
+  <precio>123.56</precio>
+  <cantidad>678</cantidad>
+  <pagado>true</pagado>
+</pagos>
