@@ -38,7 +38,7 @@
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="titulo" type="tipo_texto"/>
-                            <xs:element name="discografica" default="CBS">
+                            <xs:element name="discografica" default="CBS" minOccurs="0">
                                 <xs:simpleType>
                                     <xs:restriction base="xs:string">
                                         <xs:enumeration value="Sony"/>
@@ -48,9 +48,9 @@
                                     </xs:restriction>
                                 </xs:simpleType>
                             </xs:element>
-                            <xs:element name="anio" minOccurs="0">
+                            <xs:element name="anio">
                                 <xs:complexType mixed="true">
-                                    <xs:attribute name="mes">
+                                    <xs:attribute name="mes" use="optional">
                                         <xs:simpleType>
                                             <xs:restriction base="xs:string">
                                                 <xs:enumeration value="enero"/>
@@ -76,6 +76,7 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
     <xs:simpleType name="tipo_texto">
         <xs:restriction base="xs:string">
             <xs:pattern value=".{1,50}"/>
